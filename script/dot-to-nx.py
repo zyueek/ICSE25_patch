@@ -5,7 +5,7 @@ import logging
 import sys
 import networkx as nx
 from tqdm import *
-base_folder = '/storage2/yueke/'
+base_folder = '/storage2/'
 sample_folder = os.path.join(base_folder, 'projects')
 
 severity = sys.argv[1]
