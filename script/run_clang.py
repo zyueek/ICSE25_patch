@@ -18,7 +18,7 @@ import logging
 #             +-- repo
 #             +-- analysis
 
-base_folder = '/storage2/yueke'
+base_folder = '/storage2'
 sample_folder = os.path.join(base_folder, 'projects')
 
 sev = sys.argv[1]
