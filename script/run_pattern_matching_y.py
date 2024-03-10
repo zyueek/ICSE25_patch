@@ -29,7 +29,7 @@ import argparse as arg
 #             +-- repo
 #             +-- analysis
 
-base_folder = '/storage2/yueke'
+base_folder = '/storage2/'
 sample_folder = os.path.join(base_folder, 'projects')
 severity = sys.argv[1]
 if severity == 'all':
