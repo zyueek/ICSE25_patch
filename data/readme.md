@@ -5,6 +5,6 @@ For the extended dataset:
 all_ci.tar.gz is the patch dist for clang and infer.
 all_rcf.tar.gz is the patch dist for rats, cppcheck and flawfinders.
 
-For the shared dataset:
+For the basis dataset:
 
 all_fivetool.tar.gz include all patch dist for five static anlyzers. 
