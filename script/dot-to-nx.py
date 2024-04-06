@@ -22,10 +22,10 @@ def getfilename(path):
     return result
 # configure logging
 timestr = time.strftime("%Y%m%d-%H%M%S")
-log_file = os.path.join('/home/yueke/logs/', f'dotnx_{timestr}.log')
+log_file = os.path.join('/home/logs/', f'dotnx_{timestr}.log')
 targets = logging.StreamHandler(sys.stdout), logging.FileHandler(log_file)
 logging.basicConfig(format='%(message)s', level=logging.INFO, handlers=targets)
-#f.path=="/storage2/yueke/projects/crit/826_git"
+#f.path=="/storage2/projects/crit/826_git"
 for sev_folder in [os.path.join(sample_folder, sev) for sev in severities]:
     for project_folder in tqdm([f.path for f in os.scandir(sev_folder) if f.is_dir()]):
 
