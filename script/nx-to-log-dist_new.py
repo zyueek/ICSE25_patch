@@ -42,7 +42,7 @@ timestr = time.strftime("%Y%m%d-%H%M%S")
 log_file = os.path.join('/home/logs/', f'logdist_{timestr}.log')
 targets = logging.StreamHandler(sys.stdout), logging.FileHandler(log_file)
 logging.basicConfig(format='%(message)s', level=logging.INFO, handlers=targets)
-#f.path=="/storage2/yueke/projects/crit/1624_opa-ff"
+
 for sev_folder in [os.path.join(sample_folder, sev) for sev in severities]:
     for project_folder in [f.path for f in os.scandir(sev_folder) if f.is_dir()]:
         logging.info(f'starting {os.path.basename(project_folder)}')
