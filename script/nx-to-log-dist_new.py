@@ -28,7 +28,7 @@ def find_node_with_subset(node_list, target_subset):
 
 pd.options.mode.chained_assignment = None
 
-base_folder = '/storage2/yueke'
+base_folder = '/storage2'
 sample_folder = os.path.join(base_folder, 'projects')
 
 severity = sys.argv[1]
@@ -39,7 +39,7 @@ else:
 
 # configure logging
 timestr = time.strftime("%Y%m%d-%H%M%S")
-log_file = os.path.join('/home/cuthbene/logs/', f'logdist_{timestr}.log')
+log_file = os.path.join('/home/logs/', f'logdist_{timestr}.log')
 targets = logging.StreamHandler(sys.stdout), logging.FileHandler(log_file)
 logging.basicConfig(format='%(message)s', level=logging.INFO, handlers=targets)
 #f.path=="/storage2/yueke/projects/crit/1624_opa-ff"
