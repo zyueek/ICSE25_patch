@@ -118,7 +118,7 @@ def clang_failed(analysis_folder: str):
 
 # configure logging
 timestr = time.strftime("%Y%m%d-%H%M%S")
-log_file = os.path.join('/home/yueke/logs', f'clang_{timestr}.log')
+log_file = os.path.join('/home', f'clang_{timestr}.log')
 targets = logging.StreamHandler(sys.stdout), logging.FileHandler(log_file)
 logging.basicConfig(format='%(message)s', level=logging.INFO, handlers=targets)
 
